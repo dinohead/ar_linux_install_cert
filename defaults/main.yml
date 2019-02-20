@@ -1,0 +1,64 @@
+---
+linux_install_cert_certificates:
+  - name: fake_cert01.crt
+    pem: |
+      -----BEGIN CERTIFICATE-----
+      MIIEAzCCAuugAwIBAgIJALVxQfhBQwlhMA0GCSqGSIb3DQEBCwUAMIGXMQswCQYD
+      VQQGEwJVUzELMAkGA1UECAwCTkUxEDAOBgNVBAcMB1JhbHN0b24xFTATBgNVBAoM
+      DERpbm9oZWFkIExMQzEWMBQGA1UECwwNZmFrZSBBRiBjZXJ0czEXMBUGA1UEAwwO
+      aGFsLmRvbWFpbi5jb20xITAfBgkqhkiG9w0BCQEWEmRlcmVrQGRpbm9oZWFkLmNv
+      bTAeFw0xODA3MTcxODQ3MjlaFw0xOTA3MTcxODQ3MjlaMIGXMQswCQYDVQQGEwJV
+      UzELMAkGA1UECAwCTkUxEDAOBgNVBAcMB1JhbHN0b24xFTATBgNVBAoMDERpbm9o
+      ZWFkIExMQzEWMBQGA1UECwwNZmFrZSBBRiBjZXJ0czEXMBUGA1UEAwwOaGFsLmRv
+      bWFpbi5jb20xITAfBgkqhkiG9w0BCQEWEmRlcmVrQGRpbm9oZWFkLmNvbTCCASIw
+      DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAK5jgl4Fnh6oRu1ZIvPe8JoBLnRM
+      q7kOI0EsSO3b8nNmWuug1fNFRaokJYhlMEPRFjOx4rBInzoQzvleTwnuciT9H6eR
+      xjLpTennnUKfDu8rambO+abNK0GNe3N9Fy0Zls2ryd0C0Kgwbp0phNTRXec4Rf3p
+      uuphZU0nutden/7deFm4+o8IuZQA4NYfSBHGgGvY25IJ5abIllWqvJarnzXnVd5u
+      VQJvWGWvAcXxjR3KM1A1zxg53XMoOpiJefUIdHFv0CfS2+fmuNYtLgsEutq8WtWP
+      LKS1Rbr/mDoi+p0KtDs2Og+exFG9hA/PnxxzYKsX5RnjQsLkHMa2F/639lkCAwEA
+      AaNQME4wHQYDVR0OBBYEFIoVrzVXcBcpwlx/IdGUR9rqzYL7MB8GA1UdIwQYMBaA
+      FIoVrzVXcBcpwlx/IdGUR9rqzYL7MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEL
+      BQADggEBAEBeBJxb/yBmsu7WAQUJ7FHJcVGqa6guyK1TjQjaGUWj51qu4tj3vcQv
+      VsJCNB/FNrn25WLs5mKPMUe0LTimxomd6fHjP78PbLD1PM34taqdONlJjMJ9h0Ac
+      UE9Rmd+T7qCBKXZ93kCL64NMJAMZUGv4Tmu6K/Oc1M8NlCoj+XyZD//85VLjJCTl
+      NT+h5tcFkhYQKhIQdUoXWNsSOrjjy6kL+1XyhR3X7xpU4qfV3vqKfgZrQeGXH7Ba
+      pnwXU4Fb+aAx6AUNje26r9fxGCPEy75tTQVPZwtFF+XbY95CDF/ExeB8Rbyuw9UR
+      SRNUK8EjiNlhKUGCGG38wK7+h/nIeYw=
+      -----END CERTIFICATE-----
+
+  - name: fake_cert02.crt
+    pem: |
+      -----BEGIN CERTIFICATE-----
+      MIIEAzCCAuugAwIBAgIJAK6b4p4LbqpLMA0GCSqGSIb3DQEBCwUAMIGXMQswCQYD
+      VQQGEwJVUzELMAkGA1UECAwCTkUxEDAOBgNVBAcMB1JhbHN0b24xFTATBgNVBAoM
+      DERpbm9oZWFkIExMQzEWMBQGA1UECwwNZmFrZSBBRiBjZXJ0czEXMBUGA1UEAwwO
+      c2FsLmRvbWFpbi5jb20xITAfBgkqhkiG9w0BCQEWEmRlcmVrQGRpbm9oZWFkLmNv
+      bTAeFw0xODA3MTcxODQ5MzVaFw0xOTA3MTcxODQ5MzVaMIGXMQswCQYDVQQGEwJV
+      UzELMAkGA1UECAwCTkUxEDAOBgNVBAcMB1JhbHN0b24xFTATBgNVBAoMDERpbm9o
+      ZWFkIExMQzEWMBQGA1UECwwNZmFrZSBBRiBjZXJ0czEXMBUGA1UEAwwOc2FsLmRv
+      bWFpbi5jb20xITAfBgkqhkiG9w0BCQEWEmRlcmVrQGRpbm9oZWFkLmNvbTCCASIw
+      DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALvJOJRhGCenTaHCZvDZ14Rz6Qn9
+      IU+SKRhE0PfcPhY936ZmzCDtfLM9zyq8/gEM95NRAb+vtgKGE2rUseiMVF54mIsB
+      SY98eAlPK9o7C+kJRlJua11eU6Pcjf5rQoGO0EmbaiikyOemlCGS+J7rjAXg6wvD
+      jQWRK/Rcvc62yVb55HV1ME3g2GrwhE+03BTtrqryFNif/6sOKVIPoKU26Imwz8Ob
+      h1d13v7OrApoWUv2NiYGZCU664DaZsJDVbyy5pF39KgxNPtJGC7wnHielL1b/bc5
+      MpDJ3DOSGgRFa4Rn9XceB1LvbWrwmmrtp9cRFIjQ//khSaFQP4Z4IIVuZbMCAwEA
+      AaNQME4wHQYDVR0OBBYEFE5y+Z2XbLr/4zuPwd/brKa6tpfQMB8GA1UdIwQYMBaA
+      FE5y+Z2XbLr/4zuPwd/brKa6tpfQMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEL
+      BQADggEBAHW7eTVCVmrw1ntLBmVJJEwQ4QaQbdXWbaIdR6iFpnR87zXgFFlXLMSB
+      0sfXTjXW2bIxeZjRgROUZAf++JTaaEfDwjQ9pT1bhb253quj6Zpepk6iA/iuzEyJ
+      5/XOx3NFVhdb1ArRIvbvepOgksKnQiuCsyGvEuEvG9orQQI0MtHz+J1uElkOkIO7
+      i+NmESg4R8b3mDmhUIlReK25dZ86zNaJbb0DbDiuCMdjVs5A3cLiCK57drRoDVT2
+      hFPXYoK6ydBPD2pLYv0JlZyfN87BqfMLh6cPlkYuqOm7auetWyZ6d5Oa3DVjOCKV
+      q2tMaYC69++8bOY1l9v5QewVRpnshXQ=
+      -----END CERTIFICATE-----
+
+linux_install_cert_path: |-
+  {%- if ansible_os_family == 'RedHat' -%}
+  /etc/pki/ca-trust/source/anchors
+  {%- elif ansible_os_family == 'Debian' -%}
+  /usr/local/share/ca-certificates
+  {%- else -%}
+  /etc/ssl
+  {%- endif -%}
