@@ -1,0 +1,37 @@
+---
+- name: FILE | Ensure CA directory exists
+  become: true
+  become_user: root
+  file:
+    path: "{{ linux_install_cert_path }}"
+    state: directory
+    owner: root
+    group: root
+    mode: 'u=rwx,g=rx,o=rx'
+    recurse: true
+
+- name: TEMPLATE | Template out the certificates
+  become: true
+  become_user: root
+  template:
+    src: cert.j2
+    dest: "{{ linux_install_cert_path }}/{{ item.name }}"
+    owner: root
+    group: root
+    mode: 'u=rw,g=r,o=r'
+  with_items: "{{ linux_install_cert_certificates }}"
+
+- name: SHELL | Install certificates (Debian)
+  become: true
+  become_user: root
+  shell: "/usr/sbin/update-ca-certificates"
+  when: ansible_os_family == 'Debian'
+
+- name: SHELL | Install certificates (RedHat)
+  become: true
+  become_user: root
+  shell: "{{ item }}"
+  when: ansible_os_family == 'RedHat'
+  with_items:
+  - /usr/bin/update-ca-trust enable
+  - /usr/bin/update-ca-trust extract
